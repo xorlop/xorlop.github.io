@@ -9,10 +9,10 @@ export default component$(() => {
     <>
       <Hero />
       <div class="">
-        <div class="container mx-auto flex w-full flex-col items-center gap-48">
+        <div class="container mx-auto flex w-full flex-col items-center gap-32">
           <section
             class="flex w-full flex-col items-center gap-4 p-4 "
-            id="aboutus"
+            id="about_us"
           >
             <h2>About Us</h2>
             <p class="max-w-prose">

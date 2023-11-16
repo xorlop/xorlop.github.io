@@ -32,7 +32,10 @@ export default component$(() => {
               but a journey into a world of bold, innovative flavors.
             </p>
           </section>
-          <section class="flex w-full flex-col items-center gap-4 p-4 p-4">
+          <section
+            id="menu"
+            class="flex w-full flex-col items-center gap-4 p-4 p-4"
+          >
             <h2>Menu</h2>
             <ul class="grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-3">
               <li class="flex flex-col gap-4 p-4">
@@ -97,7 +100,10 @@ export default component$(() => {
               </li>
             </ul>
           </section>
-          <section class="flex w-full flex-col items-center gap-4 p-4 p-4">
+          <section
+            id="values"
+            class="flex w-full flex-col items-center gap-4 p-4 p-4"
+          >
             <h2>Our Values</h2>
             <ul class="grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-3">
               <li class="flex flex-col gap-4 p-4">
@@ -153,19 +159,22 @@ export default component$(() => {
               </li>
             </ul>
           </section>
-          <section class="flex w-full flex-col items-center gap-4 p-4 p-4">
+          <section
+            id="contact"
+            class="flex w-full flex-col items-center gap-4 p-4 p-4"
+          >
             <h2>Keep up on exclusive info and updates!</h2>
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSdjQgSn5-RpmuF3Z5tzIPJoZ1pbptjq-aEBfGCsPbTz96cp8Q/viewform?embedded=true"
-              width="450"
-              height="660"
+              width="120%"
+              height="560"
             />
           </section>
           <section class="flex w-full flex-col items-center gap-4 p-4 p-4">
             <h2>What flavor should we try next?</h2>
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSe9fGQ0LzsZ-AmW2b-q6jDd2iSc77fsFhHKy7C61LpuYTkNug/viewform?embedded=true"
-              width="450"
+              width="120%"
               height="560"
             />
           </section>
@@ -176,11 +185,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Boba Fusion",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "Where sip meets fusion",
     },
   ],
 };

@@ -9,7 +9,7 @@ export default component$(() => {
     <>
       <Hero />
       <div class="">
-        <div class="container mx-auto flex w-full flex-col items-center gap-32">
+        <div class="container mx-auto flex w-full flex-col items-center gap-28">
           <section
             class="flex w-full flex-col items-center gap-4 p-4 "
             id="about_us"
@@ -38,11 +38,11 @@ export default component$(() => {
           >
             <h2>Menu</h2>
             <ul class="grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-3">
-              <li class="flex flex-col gap-4 p-4">
+              <li class="flex flex-col gap-4">
                 <img
                   src="/horchataMilk.png"
                   alt="Horchata Milk Tea"
-                  class="h-128 w-full object-cover"
+                  class="h-128 w-full rounded object-cover"
                   height="1024"
                   width="1024"
                 />
@@ -57,11 +57,11 @@ export default component$(() => {
                   Cinnamon, Tapioca Pearls.
                 </p>
               </li>
-              <li class="flex flex-col gap-4 p-4">
+              <li class="flex flex-col gap-4">
                 <img
                   src="/mangoChamoy.png"
                   alt="Mango Chamoy Tea"
-                  class="h-128 w-full object-cover"
+                  class="h-128 w-full rounded object-cover"
                   height="1024"
                   width="1024"
                 />
@@ -78,11 +78,11 @@ export default component$(() => {
                   Tapioca Pearls, Optional Lime Juice.
                 </p>
               </li>
-              <li class="flex flex-col gap-4 p-4">
+              <li class="flex flex-col gap-4">
                 <img
                   src="/sandiaLimon.png"
                   alt="Sandía Límon Tea"
-                  class="h-128 w-full object-cover"
+                  class="h-128 w-full rounded object-cover"
                   height="1024"
                   width="1024"
                 />
@@ -106,11 +106,11 @@ export default component$(() => {
           >
             <h2>Our Values</h2>
             <ul class="grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-3">
-              <li class="flex flex-col gap-4 p-4">
+              <li class="flex flex-col gap-4">
                 <img
                   src="/quality.png"
                   alt="Quality"
-                  class="h-128 w-full object-cover"
+                  class="h-128 w-full rounded object-cover"
                   height="1024"
                   width="1024"
                 />
@@ -121,11 +121,11 @@ export default component$(() => {
                   complex flavor profiles that are innovative and satisfying.
                 </p>
               </li>
-              <li class="flex flex-col gap-4 p-4">
+              <li class="flex flex-col gap-4">
                 <img
                   src="/innovation.png"
                   alt="Innovation"
-                  class="h-128 w-full object-cover"
+                  class="h-128 w-full rounded object-cover"
                   height="1024"
                   width="1024"
                 />
@@ -139,11 +139,11 @@ export default component$(() => {
                   drinking experience that is both unique and memorable.
                 </p>
               </li>
-              <li class="flex flex-col gap-4 p-4">
+              <li class="flex flex-col gap-4">
                 <img
                   src="/community.png"
                   alt="Community"
-                  class="h-128 w-full object-cover"
+                  class="h-128 w-full rounded object-cover"
                   height="1024"
                   width="1024"
                 />

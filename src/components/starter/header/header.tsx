@@ -1,39 +1,42 @@
 import { component$ } from "@builder.io/qwik";
-import { QwikLogo } from "../icons/qwik";
+import { BobaFusionLogo } from "../icons/qwik";
 import styles from "./header.module.css";
 
 export default component$(() => {
   return (
     <header class={styles.header}>
-      <div class={["container", styles.wrapper]}>
-        <div class={styles.logo}>
-          <a href="/" title="qwik">
-            <QwikLogo height={50} width={143} />
-          </a>
-        </div>
+      <div
+        class={[
+          "container flex flex-col items-center gap-8 px-[30px] py-[40px]",
+        ]}
+      >
+        <a
+          class="flex flex-col items-center gap-4"
+          href="/"
+          title="Boba Fusion"
+        >
+          <BobaFusionLogo height={350} width={215} />
+          <h1 class="font-mate-sc text-black">Boba Fusion</h1>
+        </a>
         <ul>
           <li>
-            <a
-              href="https://qwik.builder.io/docs/components/overview/"
-              target="_blank"
-            >
-              Docs
+            <a class="text-xl" href="#about_us">
+              About Us
             </a>
           </li>
           <li>
-            <a
-              href="https://qwik.builder.io/examples/introduction/hello-world/"
-              target="_blank"
-            >
-              Examples
+            <a class="text-xl" href="#menu">
+              Menu
             </a>
           </li>
           <li>
-            <a
-              href="https://qwik.builder.io/tutorial/welcome/overview/"
-              target="_blank"
-            >
-              Tutorials
+            <a class="text-xl" href="#values">
+              Values
+            </a>
+          </li>
+          <li>
+            <a class="text-xl" href="#contact">
+              Contact Us
             </a>
           </li>
         </ul>

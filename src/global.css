@@ -6,6 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MateSC";
+  src: url("/fonts/MateSC-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-Regular.ttf") format("truetype");
+}
 /**
  * WHAT IS THIS FILE?
  *
@@ -42,21 +50,8 @@ html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    "Noto Sans",
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: "Nunito", "Comic Sans", sans-serif;
+  font-size: 24px;
   color: var(--qwik-dark-text);
 }
 
@@ -64,11 +59,6 @@ body {
   padding: 0;
   margin: 0;
   line-height: inherit;
-}
-
-@font-face {
-  font-family: "MateSC";
-  src: url("/fonts/MateSC-Regular.ttf") format("truetype");
 }
 
 .font-mate-sc {
@@ -84,4 +74,7 @@ h6,
 a,
 button {
   font-family: "MateSC", sans-serif;
+}
+p {
+  font-family: "Nunito", "Comic Sans", sans-serif;
 }

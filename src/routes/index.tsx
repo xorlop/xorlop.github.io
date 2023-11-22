@@ -1,14 +1,21 @@
 import { component$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
+import Community from "~/media/community.png?jsx";
+import HorchataMilk from "~/media/horchataMilk.png?jsx";
+import Innovation from "~/media/innovation.png?jsx";
+import MangoChamoy from "~/media/mangoChamoy.png?jsx";
+import Quality from "~/media/quality.png?jsx";
+import SandiaLimon from "~/media/sandiaLimon.png?jsx";
 
 import Hero from "~/components/starter/hero/hero";
-// import Infobox from "~/components/starter/infobox/infobox";
+import EmailSignUpForm from "~/components/emailSignUpForm";
+import CommentsForm from "~/components/commentsForm";
 
 export default component$(() => {
   return (
     <>
       <Hero />
-      <div class="">
+      <div>
         <div class="container mx-auto flex w-full flex-col items-center gap-28">
           <section
             class="flex w-full flex-col items-center gap-4 p-4 "
@@ -39,12 +46,9 @@ export default component$(() => {
             <h2>Menu</h2>
             <ul class="grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-3">
               <li class="flex flex-col gap-4">
-                <img
-                  src="/horchataMilk.png"
-                  alt="Horchata Milk Tea"
-                  class="h-128 w-full rounded object-cover"
-                  height="1024"
-                  width="1024"
+                <HorchataMilk
+                  alt="Horchata Milk Tea - a light brown tea with classic boba pearls"
+                  class="rounded"
                 />
                 <h3 class="text-xl">Horchata Milk Tea</h3>
                 <p>
@@ -58,12 +62,9 @@ export default component$(() => {
                 </p>
               </li>
               <li class="flex flex-col gap-4">
-                <img
-                  src="/mangoChamoy.png"
-                  alt="Mango Chamoy Tea"
-                  class="h-128 w-full rounded object-cover"
-                  height="1024"
-                  width="1024"
+                <MangoChamoy
+                  alt="Mango Chamoy Tea - an orange tea with red swirls and classic boba pearls"
+                  class="rounded"
                 />
                 <h3 class="text-xl">Mango Chamoy Tea</h3>
                 <p>
@@ -79,12 +80,9 @@ export default component$(() => {
                 </p>
               </li>
               <li class="flex flex-col gap-4">
-                <img
-                  src="/sandiaLimon.png"
-                  alt="Sandía Límon Tea"
-                  class="h-128 w-full rounded object-cover"
-                  height="1024"
-                  width="1024"
+                <SandiaLimon
+                  alt="Sandia Limon Tea - a gradient tea starting with limon on the bottom and sandia on the top with classic boba pearls"
+                  class="rounded"
                 />
                 <h3 class="text-xl">Sandía Límon Tea</h3>
                 <p>
@@ -107,13 +105,7 @@ export default component$(() => {
             <h2>Our Values</h2>
             <ul class="grid list-none grid-cols-1 gap-4 p-0 md:grid-cols-3">
               <li class="flex flex-col gap-4">
-                <img
-                  src="/quality.png"
-                  alt="Quality"
-                  class="h-128 w-full rounded object-cover"
-                  height="1024"
-                  width="1024"
-                />
+                <Quality class="rounded" />
                 <h3 class="mt-2 text-xl font-semibold">Quality</h3>
                 <p>
                   Our passion for quality shines through in our meticulous
@@ -122,13 +114,7 @@ export default component$(() => {
                 </p>
               </li>
               <li class="flex flex-col gap-4">
-                <img
-                  src="/innovation.png"
-                  alt="Innovation"
-                  class="h-128 w-full rounded object-cover"
-                  height="1024"
-                  width="1024"
-                />
+                <Innovation class="rounded" />
                 <h3 class="mt-2 text-xl font-semibold">Innovation</h3>
                 <p>
                   Innovation at our company means constantly pushing the
@@ -140,13 +126,7 @@ export default component$(() => {
                 </p>
               </li>
               <li class="flex flex-col gap-4">
-                <img
-                  src="/community.png"
-                  alt="Community"
-                  class="h-128 w-full rounded object-cover"
-                  height="1024"
-                  width="1024"
-                />
+                <Community class="rounded" />
                 <h3 class="mt-2 text-xl font-semibold">Community</h3>
                 <p>
                   Community is the cornerstone of our ethos. We believe in the
@@ -164,19 +144,15 @@ export default component$(() => {
             class="flex w-full flex-col items-center gap-4 p-4 p-4"
           >
             <h2>Keep up on exclusive info and updates!</h2>
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdjQgSn5-RpmuF3Z5tzIPJoZ1pbptjq-aEBfGCsPbTz96cp8Q/viewform?embedded=true"
-              width="120%"
-              height="560"
-            />
+            <EmailSignUpForm />
           </section>
           <section class="flex w-full flex-col items-center gap-4 p-4 p-4">
             <h2>What flavor should we try next?</h2>
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSe9fGQ0LzsZ-AmW2b-q6jDd2iSc77fsFhHKy7C61LpuYTkNug/viewform?embedded=true"
-              width="120%"
-              height="660"
-            />
+            <p>
+              Have a flavor suggestion? Or you just want to send a message?
+              Leave your thoughts here!
+            </p>
+            <CommentsForm />
           </section>
         </div>
       </div>
